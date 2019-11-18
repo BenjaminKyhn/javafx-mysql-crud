@@ -69,7 +69,7 @@ public class MainController implements Initializable {
 
     @FXML
     private void insertButton() {
-    	String query = "insert into books values("+idField.getText()+",'"+titleField.getText()+"','"+authorField.getText()+"',"+yearField.getText()+","+pagesField.getText()+")";
+        String query = "insert into books values("+idField.getText()+",'"+titleField.getText()+"','"+authorField.getText()+"',"+yearField.getText()+","+pagesField.getText()+")";
     	executeQuery(query);
     	showBooks();
     }
@@ -107,7 +107,7 @@ public class MainController implements Initializable {
     public Connection getConnection() {
     	Connection conn;
     	try {
-    		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library","root","admin");
+    		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library","root","CodeWarrior8");
     		return conn;
     	}
     	catch (Exception e){
